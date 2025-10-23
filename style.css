@@ -1,72 +1,147 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #f5f5f5;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf4;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background: #008080;
-  color: white;
-  padding: 15px 0;
+  background-color: #f6d7b0;
   text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 3px solid #e3a76f;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #814d1f;
+}
+
+header p {
+  font-style: italic;
+  color: #633e14;
+  margin-bottom: 1rem;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+nav a {
+  text-decoration: none;
+  color: #633e14;
+  font-weight: 600;
 }
 
-nav ul li a {
-  color: white;
+.hero {
+  background-color: #ffe9d1;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.boton {
+  background-color: #814d1f;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero {
-  background: url('https://picsum.photos/1200/400') center/cover no-repeat;
-  color: white;
+section {
+  padding: 3rem 2rem;
   text-align: center;
-  padding: 100px 20px;
 }
 
-section {
-  padding: 50px 20px;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #814d1f;
+  margin-top: 0.8rem;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.galeria img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 form {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
+  gap: 1rem;
 }
 
-input, textarea, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #e3a76f;
+  border-radius: 8px;
+  background-color: #fffaf4;
 }
 
-button {
-  background: #008080;
+form button {
+  background-color: #814d1f;
   color: white;
   border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #006666;
-}
-
 footer {
-  background: #333;
-  color: white;
+  background-color: #f6d7b0;
+  color: #633e14;
   text-align: center;
-  padding: 15px 0;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
 }
