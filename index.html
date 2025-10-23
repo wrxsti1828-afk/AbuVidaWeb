@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abuvida | Empresa Educativa</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuvida - Centro de Recreación para Adultos Mayores</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Abuvida</h1>
+    <p>Vivir, compartir y disfrutar cada día</p>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#galeria">Galería</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="inicio" class="hero">
-    <h2>Formando el futuro con educación de calidad</h2>
-    <p>Abuvida impulsa el aprendizaje a través de proyectos innovadores y humanos.</p>
-    <button onclick="alert('Gracias por visitarnos!')">Conócenos</button>
+    <h2>Un lugar para disfrutar la vida</h2>
+    <p>En Abuvida creemos que cada día es una oportunidad para reír, aprender y crear recuerdos. Somos un espacio diseñado para el bienestar, la compañía y la diversión de las personas mayores.</p>
+    <a href="#contacto" class="boton">Conócenos</a>
   </section>
 
-  <section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una empresa dedicada a ofrecer programas educativos integrales, centrados en el desarrollo personal y académico.</p>
+  <section id="actividades">
+    <h2>Actividades Destacadas</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Taller de arte">
+        <h3>Talleres de Arte</h3>
+        <p>Expresamos emociones a través de la pintura y la creatividad.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Juegos de mesa">
+        <h3>Juegos y Recreación</h3>
+        <p>Risas, concentración y amistad en cada partida.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Yoga suave">
+        <h3>Yoga y Bienestar</h3>
+        <p>Ejercicios suaves para mantener cuerpo y mente en armonía.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Capacitaciones docentes</li>
-      <li>Proyectos tecnológicos educativos</li>
-      <li>Asesorías académicas</li>
-    </ul>
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Adultos compartiendo">
+      <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31" alt="Evento en Abuvida">
+      <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" alt="Taller grupal">
+    </div>
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2>Contáctanos</h2>
     <form>
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo" required />
-      <textarea placeholder="Tu mensaje" required></textarea>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Escríbenos tu mensaje" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Abuvida. Todos los derechos reservados.</p>
+    <p>© 2025 Abuvida | Cuidar el alma es vivir mejor</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
