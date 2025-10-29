@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abuvida - Centro de Recreación para Adultos Mayores</title>
+  <title>Abuvida - Bienestar y Recreación para Adultos Mayores</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Abuvida</h1>
-    <p>Vivir, compartir y disfrutar cada día</p>
+  <header class="navbar">
+    <div class="logo">Abuvida</div>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -21,47 +21,59 @@
   </header>
 
   <section id="inicio" class="hero">
-    <h2>Un lugar para disfrutar la vida</h2>
-    <p>En Abuvida creemos que cada día es una oportunidad para reír, aprender y crear recuerdos. Somos un espacio diseñado para el bienestar, la compañía y la diversión de las personas mayores.</p>
-    <a href="#contacto" class="boton">Conócenos</a>
+    <div class="overlay"></div>
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Vivir, compartir y disfrutar cada día</h1>
+      <p>Un espacio diseñado para el bienestar, la amistad y la alegría de nuestros adultos mayores.</p>
+      <a href="#contacto" class="boton">Conócenos</a>
+    </div>
   </section>
 
   <section id="actividades">
-    <h2>Actividades Destacadas</h2>
+    <h2 data-aos="fade-right">Actividades Destacadas</h2>
     <div class="cards">
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Taller de arte">
-        <h3>Talleres de Arte</h3>
-        <p>Expresamos emociones a través de la pintura y la creatividad.</p>
+        <h3>Talleres Creativos</h3>
+        <p>Explora tu lado artístico y deja volar la imaginación.</p>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Juegos de mesa">
-        <h3>Juegos y Recreación</h3>
-        <p>Risas, concentración y amistad en cada partida.</p>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Juegos">
+        <h3>Recreación y Juegos</h3>
+        <p>Actividades para fortalecer la memoria, la alegría y el compañerismo.</p>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Yoga suave">
-        <h3>Yoga y Bienestar</h3>
-        <p>Ejercicios suaves para mantener cuerpo y mente en armonía.</p>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Yoga">
+        <h3>Bienestar y Movimiento</h3>
+        <p>Ejercicios suaves para mantener cuerpo y mente en equilibrio.</p>
       </div>
     </div>
   </section>
 
   <section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria">
-      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Adultos compartiendo">
-      <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31" alt="Evento en Abuvida">
+    <h2 data-aos="fade-left">Galería</h2>
+    <div class="galeria" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Personas mayores">
+      <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31" alt="Actividades">
       <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" alt="Taller grupal">
     </div>
   </section>
 
   <section id="contacto">
-    <h2>Contáctanos</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Escríbenos tu mensaje" required></textarea>
+    <h2 data-aos="fade-right">Contáctanos</h2>
+    <form data-aos="zoom-in">
+      <div class="input-group">
+        <input type="text" required>
+        <label>Nombre completo</label>
+      </div>
+      <div class="input-group">
+        <input type="email" required>
+        <label>Correo electrónico</label>
+      </div>
+      <div class="input-group">
+        <textarea required></textarea>
+        <label>Mensaje</label>
+      </div>
       <button type="submit">Enviar</button>
     </form>
   </section>
@@ -69,5 +81,13 @@
   <footer>
     <p>© 2025 Abuvida | Cuidar el alma es vivir mejor</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
