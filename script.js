@@ -1,17 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    Swal.fire({
-      title: '¡Gracias por contactarte con Abuvida! 💙',
-      text: 'Nos alegra saber de ti. Pronto responderemos tu mensaje.',
-      icon: 'success',
-      confirmButtonColor: '#0077b6',
-      confirmButtonText: 'Cerrar'
+  const links = document.querySelectorAll(".nav-links a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      document.body.style.opacity = 0;
+      setTimeout(() => {
+        window.location = link.href;
+      }, 200);
     });
-
-    form.reset();
   });
 });
